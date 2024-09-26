@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Магазин Одежды</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>  
+    <header>
+        <h1>Магазин Одежды</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#products">Продукты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать!</h2>
+            <p>Лучшие коллекции одежды для вас.</p>
+        </section>
+
+        <section id="products">
+            <h2>Наши Продукты</h2>
+
+            <div class="product" id="product1">
+                <img src="3401027601_1_00.jpg" alt="Футболка">
+                <h3>Футболка</h3>
+                <p>500 лей.</p>
+                <select id="size1">
+                    <option value="">Выберите размер</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <select id="gender1">
+                    <option value="">Выберите пол</option>
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select>
+                <button onclick="addToCart('Футболка', 500, document.getElementById('size1').value, document.getElementById('gender1').value)">Добавить в корзину</button>
+            </div>
+
+            <div class="product" id="product2">
+                <img src="D7561AX_24AU_NM34_01_01.avif" alt="Джинсы">
+                <h3>Джинсы</h3>
+                <p>1000 лей.</p>
+                <select id="size2">
+                    <option value="">Выберите размер</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <select id="gender2">
+                    <option value="">Выберите пол</option>
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select>
+                <button onclick="addToCart('Джинсы', 1000, document.getElementById('size2').value, document.getElementById('gender2').value)">Добавить в корзину</button>
+            </div>
+
+            <div class="product" id="product3">
+                <img src="06789677700-a12o.jpg" alt="Куртка"> 
+                <h3>Куртка</h3>
+                <p>1500 лей.</p>
+                <select id="size3">
+                    <option value="">Выберите размер</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <select id="gender3">
+                    <option value="">Выберите пол</option>
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select>
+                <button onclick="addToCart('Куртка', 1500, document.getElementById('size3').value, document.getElementById('gender3').value)">Добавить в корзину</button>
+            </div>
+
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>О нас</h2>
+            <p class="about-text">Мы - команда, которая увлечена модой и стилем. Наш магазин предлагает широкий ассортимент одежды.</p>
+            <p class="about-text">Мы постоянно обновляем наш ассортимент, следуя последним трендам моды, и готовы предложить нашим клиентам лучшие предложения по доступным ценам.</p>
+            <p class="about-text">Наша цель - сделать шопинг приятным и комфортным для вас. Мы ценим каждого клиента и готовы ответить на все ваши вопросы.</p>
+        </section>
+        
+        
+
+        <section id="contact" class="contact-section">
+            <h2 class="contact-heading">Контакты</h2>
+            <p class="contact-text">Email: <a href="mailto:kushnirov17@mail.ru">kushnirov17@mail.ru</a></p>
+            <p class="contact-text">Телефон: <a href="tel:+373079497454">+373 079497454</a></p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p> 2024 Магазин Одежды</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

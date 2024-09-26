@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Корзина</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#products">Продукты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Ваши товары</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Всего: 0 лей.</p>
+        <button class="clear-cart" onclick="clearCart()">Очистить корзину</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Магазин Одежды</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
